@@ -4,9 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".main_interface">
+
+    <TextView
+        android:id="@+id/huanyin"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="欢迎使用资源回收管理平台"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/yuyue"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/test_image" />
+
+        <Button
+            android:id="@+id/yyan"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/yuyue"
+            android:layout_marginLeft="50dp"
+            android:text="预约" />
+
+        <ImageView
+            android:id="@+id/dingdan"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/yuyue"
+            android:src="@drawable/test_image" />
+
+        <Button
+            android:id="@+id/ddan"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/dingdan"
+            android:layout_toRightOf="@id/yyan"
+            android:layout_marginLeft="30dp"
+            android:text="订单" />
+        <ImageView
+            android:id="@+id/tixian"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/dingdan"
+            android:src="@drawable/test_image" />
+
+        <Button
+            android:id="@+id/txan"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/dingdan"
+            android:layout_toRightOf="@id/ddan"
+            android:layout_marginLeft="30dp"
+            android:text="提现" />
+    </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello world!"/>
+        android:layout_height="25dp"
+        android:text="价格趋势"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="5dp">
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="市场焦点"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
 </LinearLayout>
