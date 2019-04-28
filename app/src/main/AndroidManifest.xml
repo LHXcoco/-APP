@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoadActivity" />
-        <activity android:name=".person_Activity"></activity>
+        <activity android:name=".person_Activity" />
+        <activity android:name=".LJ_Activity" />
+        <activity android:name=".DD_Activity" />
+        <activity android:name=".Address_managment_Activity"></activity>
     </application>
 
 </manifest>
